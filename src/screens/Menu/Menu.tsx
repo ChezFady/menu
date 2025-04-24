@@ -1,5 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import { sections } from "../../data/sections";
+import page0Image from "../../assets/images/page0.png";
+
 import page1Image from "../../assets/images/page1.png";
 import page2Image from "../../assets/images/page2.png";
 import page3Image from "../../assets/images/page3.png";
@@ -7,7 +9,8 @@ import page4Image from "../../assets/images/page4.png";
 import page5Image from "../../assets/images/page5.png";
 import page6Image from "../../assets/images/page6.png";
 import page7Image from "../../assets/images/page7.png";
-
+import page8Image from "../../assets/images/page8.png";
+import page9Image from "../../assets/images/page9.png";
 const Menu = () => {
   const [selectedSection, setSelectedSection] = useState(0);
   return (
@@ -108,13 +111,16 @@ const Menu = () => {
         </div>
       </div> */}
       <div>
+        <img src={page0Image} className="background" />
+        <img src={page5Image} className="background" />
+        <img src={page6Image} className="background" />
+        <img src={page7Image} className="background" />
+        <img src={page8Image} className="background" />
         <img src={page1Image} className="background" />
         <img src={page2Image} className="background" />
         <img src={page3Image} className="background" />
         <img src={page4Image} className="background" />
-        <img src={page5Image} className="background" />
-        <img src={page6Image} className="background" />
-        <img src={page7Image} className="background" />
+        <img src={page9Image} className="background" />
       </div>
     </Fragment>
   );
